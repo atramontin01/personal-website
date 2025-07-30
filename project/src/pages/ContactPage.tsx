@@ -36,7 +36,7 @@ export default function ContactPage() {
               />
             </a>
             <a
-              href="#"
+              href="https://x.com/anqitram" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-[20px] bg-white/10 border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-white/20 hover:backdrop-blur-[25px] hover:brightness-110 transition-all duration-300 group"
               aria-label="Twitter/X profile"
             >
