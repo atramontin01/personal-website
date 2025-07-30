@@ -1,13 +1,12 @@
 import React from 'react';
 import { useTypingAnimation } from '../hooks/useTypingAnimation';
-import { usePageAnimation, useStaggerAnimation } from '../hooks/usePageAnimation';
+import { useStaggerAnimation } from '../hooks/usePageAnimation';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
 
 export default function HomePage({ onNavigate }: HomePageProps) {
-  const isVisible = usePageAnimation();
   const typingText = useTypingAnimation("hi, i'm angel 😇", 80);
   
   const stagger1 = useStaggerAnimation(300);
@@ -17,10 +16,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   const stagger5 = useStaggerAnimation(1500);
 
   return (
-    <div className={`pt-20 px-6 min-h-screen text-left transition-all duration-1000 ${
-      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-    }`}>
-      <div className="max-w-4xl mobile-optimized">
+    <div className="pt-20 px-6 min-h-screen text-left">
+      <div className="max-w-4xl">
         <div className="pt-16">
           <h1 className="text-4xl md:text-6xl font-light text-gray-900 mb-6 tracking-tight">
             <span className="inline-block min-h-[1.2em]">{typingText}</span>
@@ -57,37 +54,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               i'm living in sf right now. you can probably catch me biking up hawk hill, grabbing breakfast burritos in the mission, or enjoying sunny days at dolores park.
             </p>
           </div>
-          
-          {/* Interactive call-to-action buttons */}
-          <div className={`flex flex-wrap gap-4 mb-12 transition-all duration-700 delay-1000 ${
-            stagger5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}>
-            <button
-              onClick={() => onNavigate('work')}
-              className="hover-lift px-6 py-3 bg-blue-500 text-white rounded-lg font-medium transition-all duration-300 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            >
-              View My Work
-            </button>
-            <button
-              onClick={() => onNavigate('life')}
-              className="hover-lift px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-50 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
-            >
-              Explore My Journey
-            </button>
-          </div>
         </div>
         
-        <div className={`mt-12 transition-all duration-1000 delay-1200 ${
-          stagger5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          <div className="hover-lift">
-            <img 
-              src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg" 
-              alt="angel on bike"
-              className="w-full max-w-[580px] h-auto rounded-lg shadow-lg transition-all duration-300"
-              loading="lazy"
-            />
-          </div>
+        <div className="mt-12">
+          <img 
+            src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg" 
+            alt="angel on bike"
+            className="w-[580px] h-auto rounded-lg shadow-sm"
+          />
         </div>
       </div>
     </div>

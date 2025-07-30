@@ -14,36 +14,21 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100 transition-all duration-300">
+    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo/Name */}
-          <div className="text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors duration-300 cursor-pointer">
-            angel tramontin
-          </div>
-          
-          {/* Navigation Links */}
+        <div className="flex items-center justify-start">
           <div className="flex space-x-8">
             {pages.map(({ id, label }) => (
               <button
                 key={id}
                 onClick={() => onNavigate(id)}
-                className={`nav-link text-sm transition-all duration-300 ease-out relative group ${
+                className={`text-sm transition-colors duration-200 ${
                   currentPage === id 
-                    ? 'text-gray-900 font-medium active' 
+                    ? 'text-gray-900 font-medium' 
                     : 'text-gray-500 hover:text-gray-900'
                 }`}
               >
                 {label}
-                {/* Hover underline effect */}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-300 ${
-                  currentPage === id ? 'w-full' : 'w-0 group-hover:w-full'
-                }`}></span>
-                
-                {/* Active indicator */}
-                {currentPage === id && (
-                  <span className="absolute -top-1 -right-1 w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-                )}
               </button>
             ))}
           </div>
