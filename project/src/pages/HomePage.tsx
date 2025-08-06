@@ -14,6 +14,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   const stagger3 = useStaggerAnimation(900);
   const stagger4 = useStaggerAnimation(1200);
   const stagger5 = useStaggerAnimation(1500);
+  const stagger6 = useStaggerAnimation(1800);
 
   return (
     <div className="pt-20 px-6 min-h-screen text-left">
@@ -33,25 +34,31 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <p className={`transition-all duration-700 ${
               stagger2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              i previously spent the majority of my career building impactful software at linkedin, working across diverse functions including enterprise gtm, bizops, consumer products, and insights.
+              i previously spent the majority of my career building impactful software at linkedin, working across diverse functions including enterprise gtm, bizops, consumer products, and insights. working there taught me how creating economic opportunity through connection could transform lives.
             </p>
             
             <p className={`transition-all duration-700 ${
               stagger3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              as a first-generation american, raised by venezuelan immigrants whose own parents came from lebanon and italy, my identity is deeply rooted in the confluence of multiple worlds. this upbringing instilled in me a profound appreciation for new ideas, diverse people, and unfamiliar places.
+              i'm fascinated by products that create excuses for genuine connection – tools that help people find their people, without the artificial barriers.
             </p>
             
             <p className={`transition-all duration-700 ${
               stagger4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              i'm also a community builder, athlete, tech enthusiast, and avid traveler.
+              as a first-generation american, raised by venezuelan immigrants whose own parents came from lebanon and italy, my identity is deeply rooted in the confluence of multiple worlds. this upbringing instilled in me a profound appreciation for new ideas, diverse people, and unfamiliar places.
             </p>
             
             <p className={`transition-all duration-700 ${
               stagger5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              i'm living in sf right now. you can probably catch me biking up hawk hill, grabbing breakfast burritos in the mission, or enjoying sunny days at dolores park.
+              i'm a bit too extraverted, addicted to playing sports, and always chasing the next great adventure with my friends.
+            </p>
+            
+            <p className={`transition-all duration-700 ${
+              stagger6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}>
+              i'm living in sf right now. you can probably catch me hanging around bernal heights, biking up hawk hill, or a grabbing breakfast burrito at al carajo.
             </p>
           </div>
         </div>
