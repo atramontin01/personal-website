@@ -3,7 +3,6 @@ import { trackPageView } from './utils/analytics';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import WorkPage from './pages/WorkPage';
-import LifePage from './pages/LifePage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
@@ -20,8 +19,6 @@ function App() {
         return <HomePage onNavigate={handleNavigate} />;
       case 'work':
         return <WorkPage />;
-      case 'life':
-        return <LifePage />;
       case 'contact':
         return <ContactPage />;
       default:
