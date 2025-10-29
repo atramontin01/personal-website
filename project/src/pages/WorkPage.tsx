@@ -35,11 +35,6 @@ export default function WorkPage() {
     }
   ];
 
-  const projects = [
-  ];
-
-  const content = [];
-
   const Section = ({ title, items, showCompany = false }: { 
     title: string; 
     items: any[]; 
@@ -93,8 +88,6 @@ export default function WorkPage() {
       <div className="max-w-4xl">
         <div className="pt-16">
           <Section title="work" items={workExperience} showCompany={true} />
-          <Section title="projects" items={projects} />
-          <Section title="content" items={content} />
         </div>
       </div>
     </div>

@@ -9,7 +9,6 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
   const pages = [
     { id: 'home', label: 'home' },
     { id: 'work', label: 'work' },
-    { id: 'life', label: 'life' },
     { id: 'contact', label: 'contact' }
   ];
 
