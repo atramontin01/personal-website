@@ -41,7 +41,7 @@ export default function WorkPage() {
     showCompany?: boolean; 
   }) => (
     <div className="mb-16">
-      <h2 className="text-2xl font-medium text-gray-900 mb-8">{title.toLowerCase()}</h2>
+      <h2 className="text-2xl font-light text-gray-900 mb-8">{title.toLowerCase()}</h2>
       <div className="space-y-4">
         {items.map((item, index) => (
           <div key={index} className="flex items-start">
