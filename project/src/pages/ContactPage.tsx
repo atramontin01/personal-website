@@ -6,8 +6,8 @@ export default function ContactPage() {
     <div className="pt-20 px-6 min-h-screen text-left">
       <div className="max-w-4xl">
         <div className="pt-16">
-          <h2 className="text-4xl font-light text-gray-900 mb-8">let's chat</h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl leading-relaxed">
+          <h2 className="text-2xl font-light text-gray-900 mb-8">let's chat</h2>
+          <p className="text-gray-600 mb-12 max-w-2xl leading-relaxed">
             always down to riff on new ideas or help out in any way i can.
             <br />
             i typically respond to clear asks, hit me up!
