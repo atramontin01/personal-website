@@ -3,7 +3,6 @@ import { trackPageView } from './utils/analytics';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import WorkPage from './pages/WorkPage';
-import ContactPage from './pages/ContactPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -19,8 +18,6 @@ function App() {
         return <HomePage onNavigate={handleNavigate} />;
       case 'work':
         return <WorkPage />;
-      case 'contact':
-        return <ContactPage />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }

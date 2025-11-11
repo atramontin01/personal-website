@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTypingAnimation } from '../hooks/useTypingAnimation';
 import { useStaggerAnimation } from '../hooks/usePageAnimation';
+import { Mail } from 'lucide-react';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
@@ -16,6 +17,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   const stagger5 = useStaggerAnimation(1500);
   const stagger6 = useStaggerAnimation(1800);
   const stagger7 = useStaggerAnimation(2100);
+  const stagger8 = useStaggerAnimation(2400);
+  const stagger9 = useStaggerAnimation(2700);
 
   return (
     <div className="pt-12 px-6 min-h-screen text-left">
@@ -65,6 +68,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <p className={`transition-all duration-700 ${
               stagger7 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
+              always down to riff on new ideas or help out in any way i can. i typically respond to clear asks.
+            </p>
+
+            <p className={`transition-all duration-700 ${
+              stagger8 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}>
               reach me at atramontin@berkeley.edu
             </p>
           </div>
@@ -76,6 +85,45 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             alt="angel on bike"
             className="w-[400px] h-auto rounded-lg shadow-sm"
           />
+        </div>
+
+        <div className={`flex flex-wrap gap-3 mt-4 transition-all duration-700 ${
+          stagger9 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}>
+          <a
+            href="mailto:atramontin@berkeley.edu"
+            className="flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-[20px] bg-white/10 border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-white/20 hover:backdrop-blur-[25px] hover:brightness-110 transition-all duration-300"
+            aria-label="Send email"
+          >
+            <Mail className="w-4 h-4 text-gray-700" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/angeltramontin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-[20px] bg-white/10 border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-white/20 hover:backdrop-blur-[25px] hover:brightness-110 transition-all duration-300"
+            aria-label="LinkedIn profile"
+          >
+            <img
+              src="/linkedin-logo.svg"
+              alt="LinkedIn logo"
+              className="w-4 h-4"
+              style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(8%) saturate(1567%) hue-rotate(169deg) brightness(94%) contrast(87%)' }}
+            />
+          </a>
+          <a
+            href="https://x.com/tito_talks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 rounded-full backdrop-blur-[20px] bg-white/10 border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-white/20 hover:backdrop-blur-[25px] hover:brightness-110 transition-all duration-300"
+            aria-label="Twitter/X profile"
+          >
+            <img
+              src="/x-logo.svg"
+              alt="X logo"
+              className="w-4 h-4 text-gray-700"
+            />
+          </a>
         </div>
       </div>
     </div>
