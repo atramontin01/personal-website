@@ -71,10 +71,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               always down to riff on new ideas or help out in any way i can. i typically respond to clear asks.
             </p>
 
-            <p className={`text-blue-600 transition-all duration-700 ${
+            <p className={`transition-all duration-700 ${
               stagger8 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              reach me at: atramontin@berkeley.edu
+              reach me at: <span className="text-blue-600">atramontin@berkeley.edu</span>
             </p>
           </div>
         </div>
