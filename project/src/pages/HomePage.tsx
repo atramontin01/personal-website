@@ -15,16 +15,17 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   const stagger4 = useStaggerAnimation(1200);
   const stagger5 = useStaggerAnimation(1500);
   const stagger6 = useStaggerAnimation(1800);
+  const stagger7 = useStaggerAnimation(2100);
 
   return (
-    <div className="pt-20 px-6 min-h-screen text-left">
+    <div className="pt-12 px-6 min-h-screen text-left">
       <div className="max-w-4xl">
-        <div className="pt-16">
-          <h1 className="text-4xl md:text-6xl font-light text-gray-900 mb-6 tracking-tight">
+        <div className="pt-6">
+          <h1 className="text-3xl md:text-5xl font-light text-gray-900 mb-4 tracking-tight">
             <span className="inline-block min-h-[1.2em]">{typingText}</span>
           </h1>
-          
-          <div className="space-y-4 text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
+
+          <div className="space-y-2 text-base text-gray-600 mb-4 max-w-xl leading-relaxed">
             <p className={`transition-all duration-700 ${
               stagger1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
@@ -60,14 +61,20 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             }`}>
               i'm living in sf right now. you can probably catch me hanging around bernal heights, biking up hawk hill, or a grabbing breakfast burrito at al carajo.
             </p>
+
+            <p className={`transition-all duration-700 ${
+              stagger7 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}>
+              reach me at atramontin@berkeley.edu
+            </p>
           </div>
         </div>
-        
-        <div className="mt-12">
-          <img 
-            src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg" 
+
+        <div className="mt-4">
+          <img
+            src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg"
             alt="angel on bike"
-            className="w-[580px] h-auto rounded-lg shadow-sm"
+            className="w-[400px] h-auto rounded-lg shadow-sm"
           />
         </div>
       </div>
