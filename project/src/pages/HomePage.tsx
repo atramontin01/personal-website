@@ -18,7 +18,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   const stagger6 = useStaggerAnimation(1800);
   const stagger7 = useStaggerAnimation(2100);
   const stagger8 = useStaggerAnimation(2400);
-  const stagger9 = useStaggerAnimation(2700);
+  const staggerImage = useStaggerAnimation(2700);
+  const stagger9 = useStaggerAnimation(3000);
 
   return (
     <div className="pt-12 px-6 min-h-screen text-left">
@@ -79,7 +80,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className={`mt-4 transition-all duration-700 ${
+          staggerImage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}>
           <img
             src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg"
             alt="angel on bike"
