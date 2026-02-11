@@ -41,7 +41,7 @@ export default function TravelsPage() {
     <div className="pt-20 px-6 min-h-screen text-left">
       <div className="max-w-4xl">
         <div className="pt-16">
-          <h2 className="text-2xl font-light text-gray-900 mb-8">travels</h2>
+          <h2 className="text-2xl font-light text-gray-900 mb-8">travel</h2>
 
           {/* Year filter */}
           <div className="flex flex-wrap gap-2 mb-8">
