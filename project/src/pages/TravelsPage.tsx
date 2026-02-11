@@ -43,33 +43,42 @@ export default function TravelsPage() {
       <div className="px-6">
         <div className="max-w-4xl">
           <div className="pt-16">
-            <h2 className="text-2xl font-light text-gray-900 mb-6">travel</h2>
+            <p className="text-sm italic text-gray-400 mb-8">
+              "sit down with strangers on little plastic chairs on the street, eat, drink, and open yourself up to the world."
+              <span className="not-italic ml-1">— anthony bourdain</span>
+            </p>
 
-            {/* Year filter */}
-            <div className="flex flex-wrap gap-2 mb-6">
+            {/* Year slider */}
+            <div className="flex items-center gap-1 mb-6">
               <button
                 onClick={() => setSelectedYear(null)}
-                className={`px-4 py-1.5 rounded-full text-sm transition-colors duration-200 ${
+                className={`px-3 py-1 text-sm transition-colors duration-200 rounded ${
                   selectedYear === null
                     ? 'bg-gray-900 text-white'
-                    : 'text-gray-500 border border-gray-200 hover:text-gray-900'
+                    : 'text-gray-400 hover:text-gray-900'
                 }`}
               >
                 all
               </button>
-              {years.map(year => (
-                <button
-                  key={year}
-                  onClick={() => setSelectedYear(year)}
-                  className={`px-4 py-1.5 rounded-full text-sm transition-colors duration-200 ${
-                    selectedYear === year
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-500 border border-gray-200 hover:text-gray-900'
-                  }`}
-                >
-                  {year}
-                </button>
-              ))}
+              <div className="flex items-center">
+                {years.map((year, i) => (
+                  <React.Fragment key={year}>
+                    <button
+                      onClick={() => setSelectedYear(year)}
+                      className={`px-2 py-1 text-sm transition-colors duration-200 rounded ${
+                        selectedYear === year
+                          ? 'bg-gray-900 text-white'
+                          : 'text-gray-400 hover:text-gray-900'
+                      }`}
+                    >
+                      {year}
+                    </button>
+                    {i < years.length - 1 && (
+                      <span className="text-gray-200 text-xs">—</span>
+                    )}
+                  </React.Fragment>
+                ))}
+              </div>
             </div>
           </div>
         </div>
