@@ -8,7 +8,8 @@ interface NavigationProps {
 export default function Navigation({ currentPage, onNavigate }: NavigationProps) {
   const pages = [
     { id: 'home', label: 'home' },
-    { id: 'work', label: 'work' }
+    { id: 'work', label: 'work' },
+    { id: 'travels', label: 'travels' }
   ];
 
   return (
