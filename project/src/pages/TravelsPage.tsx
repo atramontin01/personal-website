@@ -43,7 +43,7 @@ export default function TravelsPage() {
       <div className="px-6">
         <div className="max-w-4xl">
           <div className="pt-16">
-            <p className="text-sm italic text-gray-400 mb-6 max-w-lg leading-relaxed">
+            <p className="text-base italic text-gray-500 mb-6 max-w-lg leading-relaxed -mt-2">
               "All of the things I need for happiness: Low plastic stool, check. Tiny little plastic table, check. Something delicious in a bowl, check."
               <span className="not-italic"> –Anthony Bourdain</span>
             </p>
