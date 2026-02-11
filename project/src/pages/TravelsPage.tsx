@@ -9,8 +9,7 @@ import {
 import { X } from 'lucide-react';
 import { travelLocations, getTravelYears, TravelLocation } from '../data/travels';
 import { useFabricTilt } from '../hooks/useFabricTilt';
-
-const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+import topology from 'world-atlas/countries-110m.json';
 
 export default function TravelsPage() {
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
@@ -87,7 +86,7 @@ export default function TravelsPage() {
               style={{ width: '100%', height: 'auto' }}
             >
               <ZoomableGroup>
-                <Geographies geography={GEO_URL}>
+                <Geographies geography={topology}>
                   {({ geographies }) =>
                     geographies.map(geo => (
                       <Geography
