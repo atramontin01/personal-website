@@ -290,20 +290,25 @@ export const travelLocations: TravelLocation[] = [
     year: 2021
   },
   {
-    id: 'buenos-aires-2020',
-    city: 'Buenos Aires',
-    country: 'Argentina',
-    coordinates: [-58.3816, -34.6037],
-    year: 2020,
-    description: 'tango and steak'
+    id: 'mexico-city-2020',
+    city: 'Mexico City',
+    country: 'Mexico',
+    coordinates: [-99.1332, 19.4326],
+    year: 2020
   },
   {
-    id: 'bogota-2020',
-    city: 'Bogotá',
-    country: 'Colombia',
-    coordinates: [-74.0721, 4.7110],
-    year: 2020,
-    description: 'coffee and mountains'
+    id: 'whistler-2020',
+    city: 'Whistler',
+    country: 'Canada',
+    coordinates: [-122.9574, 50.1163],
+    year: 2020
+  },
+  {
+    id: 'kauai-2020',
+    city: 'Kauai',
+    country: 'United States',
+    coordinates: [-159.5261, 22.0964],
+    year: 2020
   },
   {
     id: 'sydney-2019',
