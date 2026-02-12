@@ -115,6 +115,13 @@ export const travelLocations: TravelLocation[] = [
     year: 2025
   },
   {
+    id: 'cancun-2025',
+    city: 'Cancún',
+    country: 'Mexico',
+    coordinates: [-86.8515, 21.1619],
+    year: 2025
+  },
+  {
     id: 'lisbon-2024',
     city: 'Lisbon',
     country: 'Portugal',
