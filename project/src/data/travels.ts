@@ -241,20 +241,32 @@ export const travelLocations: TravelLocation[] = [
     year: 2023
   },
   {
-    id: 'london-2022',
-    city: 'London',
-    country: 'United Kingdom',
-    coordinates: [-0.1276, 51.5074],
-    year: 2022,
-    description: 'tea, rain, and history'
+    id: 'montreal-2022',
+    city: 'Montreal',
+    country: 'Canada',
+    coordinates: [-73.5673, 45.5017],
+    year: 2022
   },
   {
-    id: 'amsterdam-2022',
-    city: 'Amsterdam',
-    country: 'Netherlands',
-    coordinates: [4.9041, 52.3676],
-    year: 2022,
-    description: 'canals and bikes'
+    id: 'canaima-2022',
+    city: 'Canaima',
+    country: 'Venezuela',
+    coordinates: [-62.8543, 6.2442],
+    year: 2022
+  },
+  {
+    id: 'margarita-2022',
+    city: 'Margarita Island',
+    country: 'Venezuela',
+    coordinates: [-63.8617, 11.0041],
+    year: 2022
+  },
+  {
+    id: 'panama-city-2022',
+    city: 'Panama City',
+    country: 'Panama',
+    coordinates: [-79.5199, 8.9824],
+    year: 2022
   },
   {
     id: 'berlin-2021',
