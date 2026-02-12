@@ -10,12 +10,46 @@ export interface TravelLocation {
 
 export const travelLocations: TravelLocation[] = [
   {
-    id: 'sf-2026',
-    city: 'San Francisco',
+    id: 'rio-2026',
+    city: 'Rio de Janeiro',
+    country: 'Brazil',
+    coordinates: [-43.1729, -22.9068],
+    year: 2026
+  },
+  {
+    id: 'sao-paulo-2026',
+    city: 'São Paulo',
+    country: 'Brazil',
+    coordinates: [-46.6333, -23.5505],
+    year: 2026
+  },
+  {
+    id: 'ubatuba-2026',
+    city: 'Ubatuba',
+    country: 'Brazil',
+    coordinates: [-45.0711, -23.4336],
+    year: 2026
+  },
+  {
+    id: 'trancoso-2026',
+    city: 'Trancoso',
+    country: 'Brazil',
+    coordinates: [-39.0947, -16.5903],
+    year: 2026
+  },
+  {
+    id: 'maceio-2026',
+    city: 'Maceió',
+    country: 'Brazil',
+    coordinates: [-35.7353, -9.6658],
+    year: 2026
+  },
+  {
+    id: 'channel-islands-2026',
+    city: 'Channel Islands National Park',
     country: 'United States',
-    coordinates: [-122.4194, 37.7749],
-    year: 2026,
-    description: 'fog city'
+    coordinates: [-119.7227, 34.0069],
+    year: 2026
   },
   {
     id: 'tokyo-2025',
