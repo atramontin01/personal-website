@@ -269,20 +269,25 @@ export const travelLocations: TravelLocation[] = [
     year: 2022
   },
   {
-    id: 'berlin-2021',
-    city: 'Berlin',
-    country: 'Germany',
-    coordinates: [13.4050, 52.5200],
-    year: 2021,
-    description: 'history and techno'
+    id: 'oahu-2021',
+    city: 'Oahu',
+    country: 'United States',
+    coordinates: [-158.0000, 21.4389],
+    year: 2021
   },
   {
-    id: 'dubai-2021',
-    city: 'Dubai',
-    country: 'United Arab Emirates',
-    coordinates: [55.2708, 25.2048],
-    year: 2021,
-    description: 'desert and skyline'
+    id: 'chicago-2021',
+    city: 'Chicago',
+    country: 'United States',
+    coordinates: [-87.6298, 41.8781],
+    year: 2021
+  },
+  {
+    id: 'new-york-2021',
+    city: 'New York',
+    country: 'United States',
+    coordinates: [-74.0060, 40.7128],
+    year: 2021
   },
   {
     id: 'buenos-aires-2020',
