@@ -122,20 +122,60 @@ export const travelLocations: TravelLocation[] = [
     year: 2025
   },
   {
-    id: 'lisbon-2024',
-    city: 'Lisbon',
-    country: 'Portugal',
-    coordinates: [-9.1393, 38.7223],
-    year: 2024,
-    description: 'pastel de nata and tram 28'
+    id: 'ixtapa-2025',
+    city: 'Ixtapa',
+    country: 'Mexico',
+    coordinates: [-101.5534, 17.6570],
+    year: 2025
   },
   {
-    id: 'rome-2024',
-    city: 'Rome',
-    country: 'Italy',
-    coordinates: [12.4964, 41.9028],
-    year: 2024,
-    description: 'exploring the eternal city'
+    id: 'sayulita-2024',
+    city: 'Sayulita',
+    country: 'Mexico',
+    coordinates: [-105.4414, 20.8691],
+    year: 2024
+  },
+  {
+    id: 'naples-fl-2024',
+    city: 'Naples',
+    country: 'United States',
+    coordinates: [-81.7948, 26.1420],
+    year: 2024
+  },
+  {
+    id: 'las-vegas-2024',
+    city: 'Las Vegas',
+    country: 'United States',
+    coordinates: [-115.1398, 36.1699],
+    year: 2024
+  },
+  {
+    id: 'guatemala-2024',
+    city: 'Guatemala',
+    country: 'Guatemala',
+    coordinates: [-90.5069, 14.6349],
+    year: 2024
+  },
+  {
+    id: 'catalina-island-2024',
+    city: 'Catalina Island',
+    country: 'United States',
+    coordinates: [-118.4160, 33.3872],
+    year: 2024
+  },
+  {
+    id: 'amelia-island-2024',
+    city: 'Amelia Island',
+    country: 'United States',
+    coordinates: [-81.4626, 30.6697],
+    year: 2024
+  },
+  {
+    id: 'la-paz-2024',
+    city: 'La Paz',
+    country: 'Mexico',
+    coordinates: [-110.3128, 24.1426],
+    year: 2024
   },
   {
     id: 'paris-2023',
