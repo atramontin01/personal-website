@@ -241,6 +241,27 @@ export const travelLocations: TravelLocation[] = [
     year: 2023
   },
   {
+    id: 'amsterdam-2023',
+    city: 'Amsterdam',
+    country: 'Netherlands',
+    coordinates: [4.9041, 52.3676],
+    year: 2023
+  },
+  {
+    id: 'brussels-2023',
+    city: 'Brussels',
+    country: 'Belgium',
+    coordinates: [4.3517, 50.8503],
+    year: 2023
+  },
+  {
+    id: 'paris-2023',
+    city: 'Paris',
+    country: 'France',
+    coordinates: [2.3522, 48.8566],
+    year: 2023
+  },
+  {
     id: 'montreal-2022',
     city: 'Montreal',
     country: 'Canada',
@@ -311,20 +332,18 @@ export const travelLocations: TravelLocation[] = [
     year: 2020
   },
   {
-    id: 'sydney-2019',
-    city: 'Sydney',
-    country: 'Australia',
-    coordinates: [151.2093, -33.8688],
-    year: 2019,
-    description: 'harbour and beaches'
+    id: 'morocco-2019',
+    city: 'Morocco',
+    country: 'Morocco',
+    coordinates: [-7.0926, 31.7917],
+    year: 2019
   },
   {
-    id: 'bangkok-2019',
-    city: 'Bangkok',
-    country: 'Thailand',
-    coordinates: [100.5018, 13.7563],
-    year: 2019,
-    description: 'temples and street food'
+    id: 'barcelona-2019',
+    city: 'Barcelona',
+    country: 'Spain',
+    coordinates: [2.1734, 41.3851],
+    year: 2019
   },
   {
     id: 'new-orleans-2018',
