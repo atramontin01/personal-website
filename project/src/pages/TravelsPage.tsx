@@ -85,8 +85,15 @@ export default function TravelsPage() {
           setHoveredLocation(null);
         }}
         style={tiltStyle}
-        className="w-full"
+        className="w-full relative"
       >
+        {/* Place count overlay */}
+        <div className="absolute top-4 left-6 z-10">
+          <p className="text-sm text-gray-400">
+            {filteredLocations.length} {filteredLocations.length === 1 ? 'place' : 'places'}
+            {selectedYear ? ` in ${selectedYear}` : ' visited'}
+          </p>
+        </div>
         <ComposableMap
           projectionConfig={{ scale: 210, center: [10, 20] }}
           style={{ width: '100%', height: 'auto' }}
@@ -129,16 +136,6 @@ export default function TravelsPage() {
             ))}
           </ZoomableGroup>
         </ComposableMap>
-      </div>
-
-      {/* Location count */}
-      <div className="px-6">
-        <div className="max-w-4xl">
-          <p className="text-sm text-gray-400 mt-4">
-            {filteredLocations.length} {filteredLocations.length === 1 ? 'place' : 'places'}
-            {selectedYear ? ` in ${selectedYear}` : ' visited'}
-          </p>
-        </div>
       </div>
 
       {/* Hover tooltip */}
