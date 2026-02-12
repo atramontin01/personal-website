@@ -52,20 +52,67 @@ export const travelLocations: TravelLocation[] = [
     year: 2026
   },
   {
-    id: 'tokyo-2025',
-    city: 'Tokyo',
-    country: 'Japan',
-    coordinates: [139.6917, 35.6895],
-    year: 2025,
-    description: 'neon lights and quiet temples'
+    id: 'kitzbuhel-2025',
+    city: 'Kitzbühel',
+    country: 'Austria',
+    coordinates: [12.3922, 47.4492],
+    year: 2025
+  },
+  {
+    id: 'prague-2025',
+    city: 'Prague',
+    country: 'Czech Republic',
+    coordinates: [14.4378, 50.0755],
+    year: 2025
+  },
+  {
+    id: 'hong-kong-2025',
+    city: 'Hong Kong',
+    country: 'China',
+    coordinates: [114.1694, 22.3193],
+    year: 2025
+  },
+  {
+    id: 'costa-rica-2025',
+    city: 'Costa Rica',
+    country: 'Costa Rica',
+    coordinates: [-84.0907, 9.7489],
+    year: 2025
+  },
+  {
+    id: 'lake-shasta-2025',
+    city: 'Lake Shasta',
+    country: 'United States',
+    coordinates: [-122.4167, 40.7181],
+    year: 2025
   },
   {
     id: 'barcelona-2025',
     city: 'Barcelona',
     country: 'Spain',
     coordinates: [2.1734, 41.3851],
-    year: 2025,
-    description: 'gaudí and the mediterranean'
+    year: 2025
+  },
+  {
+    id: 'lisbon-2025',
+    city: 'Lisbon',
+    country: 'Portugal',
+    coordinates: [-9.1393, 38.7223],
+    year: 2025
+  },
+  {
+    id: 'lassen-2025',
+    city: 'Lassen National Park',
+    country: 'United States',
+    coordinates: [-121.5081, 40.4977],
+    year: 2025
+  },
+  {
+    id: 'new-york-2025',
+    city: 'New York',
+    country: 'United States',
+    coordinates: [-74.0060, 40.7128],
+    year: 2025
   },
   {
     id: 'lisbon-2024',
