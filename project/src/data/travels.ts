@@ -327,20 +327,53 @@ export const travelLocations: TravelLocation[] = [
     description: 'temples and street food'
   },
   {
-    id: 'marrakech-2018',
-    city: 'Marrakech',
-    country: 'Morocco',
-    coordinates: [-7.9811, 31.6295],
-    year: 2018,
-    description: 'souks and riads'
+    id: 'new-orleans-2018',
+    city: 'New Orleans',
+    country: 'United States',
+    coordinates: [-90.0715, 29.9511],
+    year: 2018
   },
   {
-    id: 'istanbul-2018',
-    city: 'Istanbul',
-    country: 'Turkey',
-    coordinates: [28.9784, 41.0082],
-    year: 2018,
-    description: 'where east meets west'
+    id: 'vietnam-2018',
+    city: 'Vietnam',
+    country: 'Vietnam',
+    coordinates: [108.2772, 14.0583],
+    year: 2018
+  },
+  {
+    id: 'cambodia-2018',
+    city: 'Cambodia',
+    country: 'Cambodia',
+    coordinates: [104.9910, 12.5657],
+    year: 2018
+  },
+  {
+    id: 'taiwan-2018',
+    city: 'Taiwan',
+    country: 'Taiwan',
+    coordinates: [120.9605, 23.6978],
+    year: 2018
+  },
+  {
+    id: 'myanmar-2018',
+    city: 'Myanmar',
+    country: 'Myanmar',
+    coordinates: [95.9560, 21.9162],
+    year: 2018
+  },
+  {
+    id: 'philippines-2018',
+    city: 'Philippines',
+    country: 'Philippines',
+    coordinates: [121.7740, 12.8797],
+    year: 2018
+  },
+  {
+    id: 'hong-kong-2018',
+    city: 'Hong Kong',
+    country: 'China',
+    coordinates: [114.1694, 22.3193],
+    year: 2018
   }
 ];
 
