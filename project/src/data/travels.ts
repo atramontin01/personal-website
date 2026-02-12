@@ -346,6 +346,20 @@ export const travelLocations: TravelLocation[] = [
     year: 2019
   },
   {
+    id: 'munich-2019',
+    city: 'Munich',
+    country: 'Germany',
+    coordinates: [11.5820, 48.1351],
+    year: 2019
+  },
+  {
+    id: 'puerto-escondido-2019',
+    city: 'Puerto Escondido',
+    country: 'Mexico',
+    coordinates: [-97.0719, 15.8720],
+    year: 2019
+  },
+  {
     id: 'new-orleans-2018',
     city: 'New Orleans',
     country: 'United States',
