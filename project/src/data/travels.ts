@@ -213,6 +213,34 @@ export const travelLocations: TravelLocation[] = [
     year: 2023
   },
   {
+    id: 'chamonix-2023',
+    city: 'Chamonix',
+    country: 'France',
+    coordinates: [6.8694, 45.9237],
+    year: 2023
+  },
+  {
+    id: 'slc-2023',
+    city: 'Salt Lake City',
+    country: 'United States',
+    coordinates: [-111.8910, 40.7608],
+    year: 2023
+  },
+  {
+    id: 'big-sky-2023',
+    city: 'Big Sky',
+    country: 'United States',
+    coordinates: [-111.4013, 45.2833],
+    year: 2023
+  },
+  {
+    id: 'yellowstone-2023',
+    city: 'Yellowstone National Park',
+    country: 'United States',
+    coordinates: [-110.5885, 44.4280],
+    year: 2023
+  },
+  {
     id: 'london-2022',
     city: 'London',
     country: 'United Kingdom',
