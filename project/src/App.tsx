@@ -5,12 +5,19 @@ import HomePage from './pages/HomePage';
 import WorkPage from './pages/WorkPage';
 import TravelsPage from './pages/TravelsPage';
 
-const validPages = ['home', 'work', 'travels'];
+const validPages = ['home', 'work', 'travels'] as const;
+type PageId = typeof validPages[number];
 
-function getPageFromHash(): string {
+function getPageFromHash(): PageId {
   const hash = window.location.hash.replace('#', '');
-  return validPages.includes(hash) ? hash : 'home';
+  return validPages.includes(hash as PageId) ? (hash as PageId) : 'home';
 }
+
+const pageComponents: Record<PageId, React.ComponentType<{ onNavigate?: (page: string) => void }>> = {
+  home: HomePage,
+  work: WorkPage,
+  travels: TravelsPage,
+};
 
 function App() {
   const [currentPage, setCurrentPage] = useState(getPageFromHash);
@@ -23,33 +30,24 @@ function App() {
 
   const handleNavigate = (page: string) => {
     window.location.hash = page === 'home' ? '' : page;
-    setCurrentPage(page);
+    setCurrentPage(page as PageId);
     trackPageView(page);
   };
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return <HomePage onNavigate={handleNavigate} />;
-      case 'work':
-        return <WorkPage />;
-      case 'travels':
-        return <TravelsPage />;
-      default:
-        return <HomePage onNavigate={handleNavigate} />;
-    }
-  };
+  const PageComponent = pageComponents[currentPage];
 
   return (
     <div className="min-h-screen bg-white">
       <Navigation currentPage={currentPage} onNavigate={handleNavigate} />
-      {renderPage()}
-      
-      {/* Footer */}
+      <PageComponent
+        key={currentPage}
+        {...(currentPage === 'home' ? { onNavigate: handleNavigate } : {})}
+      />
+
       <footer className="py-8 px-6 border-t border-gray-100">
-        <div className="text-left text-gray-500">
-          <p>&copy; {new Date().getFullYear()} angel tramontin. all rights reserved.</p>
-        </div>
+        <p className="text-left text-sm text-gray-400">
+          &copy; {new Date().getFullYear()} angel tramontin
+        </p>
       </footer>
     </div>
   );

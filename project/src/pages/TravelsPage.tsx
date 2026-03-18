@@ -38,7 +38,7 @@ export default function TravelsPage() {
   };
 
   return (
-    <div className="pt-20 min-h-screen text-left">
+    <div className="pt-20 min-h-screen text-left page-enter">
       {/* Header with title and filters */}
       <div className="px-6">
         <div className="max-w-4xl">
@@ -60,7 +60,7 @@ export default function TravelsPage() {
                     )}
                     <button
                       onClick={() => setSelectedYear(year)}
-                      className={`px-3 py-1 text-sm transition-all duration-200 whitespace-nowrap ${
+                      className={`px-3 py-2 min-h-[44px] text-sm transition-colors duration-75 whitespace-nowrap ${
                         isActive
                           ? 'text-gray-900 font-medium'
                           : 'text-gray-300 hover:text-gray-500'
@@ -181,7 +181,7 @@ export default function TravelsPage() {
                 </div>
                 <button
                   onClick={() => setSelectedLocation(null)}
-                  className="text-gray-400 hover:text-gray-900 transition-colors"
+                  className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center text-gray-400 hover:text-gray-900 transition-colors duration-75"
                 >
                   <X size={20} />
                 </button>
