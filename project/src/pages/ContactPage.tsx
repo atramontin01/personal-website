@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowUpRight, Mail, Github, Linkedin } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import ButtonSocialIconDemo from '@/components/ui/social-icon';
 
 export default function ContactPage() {
   return (
@@ -48,6 +49,11 @@ export default function ContactPage() {
             </a>
           </div>
 
+          {/* shadcn social icon buttons */}
+          <div className="mt-8">
+            <h3 className="text-lg font-medium text-gray-700 mb-4">also find me on</h3>
+            <ButtonSocialIconDemo />
+          </div>
         </div>
       </div>
     </div>
