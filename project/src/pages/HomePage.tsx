@@ -34,24 +34,24 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
             <p>
               my main quest for the last few months has been{' '}
-              <a href="https://youtu.be/5Jm6bv3n1So?si=6idWq8JcACp1FpPm" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">goplai</a>
+              <a href="https://youtu.be/5Jm6bv3n1So?si=6idWq8JcACp1FpPm" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">goplai</a>
               {' '}— ai that watches your sports games and turns them into highlight reels automatically. we're starting with basketball. this is a product i would've LOVED to have growing up playing competitive sports my whole life. that's why we built it.{' '}
-              <a href="https://form.typeform.com/to/hn44xRGO" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">sign up for our waitlist</a>
+              <a href="https://form.typeform.com/to/hn44xRGO" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">sign up for our waitlist</a>
               {' '}— we're in beta!
             </p>
 
             <p className="font-medium text-gray-900">side quests:</p>
 
             <p>
-              <a href="https://designmyroute.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">route art buddy</a>
+              <a href="https://designmyroute.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">route art buddy</a>
               {' '}— i love cycling around sf and i couldn't figure out how these strava influencers were biking routes that made cool shapes on the map. so i made my own.
             </p>
 
             <p>
               i've been playing{' '}
-              <a href="https://youtu.be/rSIvS-Skg28?si=IihzfHS1kzGty_Yx" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">padel</a>
+              <a href="https://youtu.be/rSIvS-Skg28?si=IihzfHS1kzGty_Yx" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">padel</a>
               {' '}since 2017 — my parents lived in panama and it's everywhere down there. i got hooked and couldn't believe it barely existed in the US. so i'm working on changing that with{' '}
-              <a href="https://playcostapadel.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">costa padel</a>
+              <a href="https://playcostapadel.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">costa padel</a>
               , starting in the east bay.
             </p>
 
@@ -61,17 +61,17 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
             <p>
               i'm obsessed with music. bad bunny to industrial techno and everything in between. recently started the{' '}
-              <a href="https://youtu.be/njvm5L2fxwo?si=oXXXEwjkzCfcoGVc" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">5% boys</a>
+              <a href="https://youtu.be/njvm5L2fxwo?si=oXXXEwjkzCfcoGVc" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">5% boys</a>
               {' '}dj collective with some buddies from business school. we do outdoor sets all around the bay area — like this sick{' '}
-              <a href="https://partiful.com/e/npLBEVsgTHbg0HyxpAG6?c=zH1DlZgl" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">sunset at baker beach</a>
+              <a href="https://partiful.com/e/npLBEVsgTHbg0HyxpAG6?c=zH1DlZgl" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">sunset at baker beach</a>
               . somehow 300+ people showed up.
             </p>
 
             <p>
               other things i'm currently loving in sf: backgammon tournaments, friday morning cold plunges at crissy field with the{' '}
-              <a href="https://www.instagram.com/saltydogsclub_sf/" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">salty dogs</a>
+              <a href="https://www.instagram.com/saltydogsclub_sf/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">salty dogs</a>
               , and tinkering with a group of people trying to{' '}
-              <a href="https://www.sutrosociety.com/index.html" target="_blank" rel="noopener noreferrer" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors duration-75">bring back the sutro baths</a>
+              <a href="https://www.sutrosociety.com/index.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">bring back the sutro baths</a>
               . this city is so back.
             </p>
 
