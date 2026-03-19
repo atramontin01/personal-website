@@ -29,7 +29,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </p>
 
             <p>
-              i'm finishing up my mba at uc berkeley haas to <em>explore</em> all the stuff that lights me up.
+              i'm now finishing up my mba at berkeley haas, where i've spent the last two years going deep on all the things that light me up.
             </p>
 
             <p>
