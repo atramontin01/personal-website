@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Mail, Linkedin, Twitter } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
@@ -80,28 +82,21 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </p>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-500">
-            <a
-              href="mailto:atramontin@berkeley.edu"
-              className="hover:text-gray-900 transition-colors duration-75"
-            >
-              email
+          <div className="mt-8 flex items-center gap-3">
+            <a href="mailto:atramontin@berkeley.edu">
+              <Button variant="outline" type="button" className="rounded-lg hover:scale-110 transition-all duration-300 cursor-pointer">
+                <Mail className="h-4 w-4" />
+              </Button>
             </a>
-            <a
-              href="https://www.linkedin.com/in/angeltramontin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-900 transition-colors duration-75"
-            >
-              linkedin
+            <a href="https://www.linkedin.com/in/angeltramontin" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" type="button" className="rounded-lg hover:scale-110 transition-all duration-300 cursor-pointer">
+                <Linkedin className="h-4 w-4" />
+              </Button>
             </a>
-            <a
-              href="https://x.com/tito_talks"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-900 transition-colors duration-75"
-            >
-              x
+            <a href="https://x.com/tito_talks" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" type="button" className="rounded-lg hover:scale-110 transition-all duration-300 cursor-pointer">
+                <Twitter className="h-4 w-4" />
+              </Button>
             </a>
           </div>
         </div>
