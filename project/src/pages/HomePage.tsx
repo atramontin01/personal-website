@@ -35,7 +35,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <p>
               my main quest for the last few months has been{' '}
               <a href="https://youtu.be/5Jm6bv3n1So?si=6idWq8JcACp1FpPm" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">goplai</a>
-              {' '}— ai that watches your sports games and turns them into highlight reels automatically. we're starting with basketball. this is a product i would've LOVED to have growing up playing competitive sports my whole life. that's why we built it.{' '}
+              {' '}— ai that watches your sports games and turns them into highlight reels automatically - starting with basketball. this is a product i would've LOVED to have growing up playing competitive sports my whole life. that's why we built it.{' '}
               <a href="https://form.typeform.com/to/hn44xRGO" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">sign up for our waitlist</a>
               {' '}— we're in beta!
             </p>
