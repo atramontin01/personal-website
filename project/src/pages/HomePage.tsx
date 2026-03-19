@@ -21,7 +21,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </p>
 
             <p>
-              first-gen american, raised by venezuelan immigrants in ohio. i grew up in a house where multiple cultures argued about dinner and somehow always agreed on music and food. i think that's where i got it — this impulse to put <em>different people</em> in the <em>same room</em> and see what happens.
+              first-gen american, raised by venezuelan immigrants in ohio. i think that's where i got it — this impulse to put <em>different people</em> in the <em>same room</em> and see what happens.
             </p>
 
             <p>
