@@ -19,15 +19,15 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
           <div className="space-y-4 text-base text-gray-600 max-w-xl leading-relaxed stagger-children">
             <p>
-              i learned pretty young that you can just do things. ever since then, i figured out i can do things that bring people together.
+              i've always had this innate feeling that i should just keep moving, doing new things, and kind of causing chaos. it never was clear to me that this was an advantage until my adult years.
             </p>
 
             <p>
-              first-gen american, raised by venezuelan immigrants in ohio. i think that's where i got it — this impulse to put <em>different people</em> in the <em>same room</em> and see what happens.
+              i'm a first-gen american, raised by venezuelan immigrants in ohio. i think that's where i got it — this impulse to put <em>different people</em> in the <em>same room</em> and see what happens.
             </p>
 
             <p>
-              i then started my career at linkedin. over six years i built ai customer support products, grew access to linkedin premium in emerging markets, and delivered data insights to fortune 500 customers that influenced $10M+ in recurring revenue. it was amazing. i met some of my best friends there. but i kept having ideas i couldn't stop thinking about. ai was happening, i was inching closer to my late twenties, so i left to do what any logical business person lost in their career would do...go back to business school.
+              i started my career at linkedin right out of college. over six years i built ai customer support products, grew access to linkedin premium in emerging markets, and delivered data insights to fortune 500 customers that influenced $10M+ in recurring revenue. it was amazing. i met some of my best friends there. but i kept having ideas i couldn't stop thinking about. ai was happening, i was inching closer to my late twenties, so i left to do what any logical business person lost in their career would do...go back to business school.
             </p>
 
             <p>
