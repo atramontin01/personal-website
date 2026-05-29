@@ -17,6 +17,19 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             hi, i'm angel.
           </h1>
 
+          <div className="mb-8">
+            {!imageLoaded && (
+              <div className="skeleton w-[400px] max-w-full h-[300px]" />
+            )}
+            <img
+              src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg"
+              alt="angel on bike"
+              className={`w-[400px] h-auto rounded-lg ${imageLoaded ? '' : 'hidden'}`}
+              onLoad={() => setImageLoaded(true)}
+              loading="eager"
+            />
+          </div>
+
           <div className="space-y-4 text-base text-gray-600 max-w-xl leading-relaxed stagger-children">
             <p>
               i've always had this innate feeling that i should just keep moving, doing new things, and kind of causing chaos. it never was clear to me that this was an advantage until my adult years.
@@ -99,19 +112,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               </Button>
             </a>
           </div>
-        </div>
-
-        <div className="mt-10">
-          {!imageLoaded && (
-            <div className="skeleton w-[400px] max-w-full h-[300px]" />
-          )}
-          <img
-            src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg"
-            alt="angel on bike"
-            className={`w-[400px] h-auto rounded-lg ${imageLoaded ? '' : 'hidden'}`}
-            onLoad={() => setImageLoaded(true)}
-            loading="eager"
-          />
         </div>
       </div>
     </div>
