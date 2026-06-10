@@ -4,8 +4,8 @@ const workExperience = [
   {
     date: 'may 2025',
     title: 'co-founder',
-    company: 'stealth ai startup',
-    link: null,
+    company: 'goplai',
+    link: 'https://joingoplai.com',
     note: 'during mba summer',
   },
   {
