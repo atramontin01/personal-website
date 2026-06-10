@@ -13,6 +13,19 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div className="pt-12 px-6 min-h-screen text-left page-enter">
       <div className="max-w-2xl">
         <div className="pt-6">
+          <div className="mb-8">
+            {!imageLoaded && (
+              <div className="skeleton w-[200px] max-w-full h-[250px]" />
+            )}
+            <img
+              src="/founder.png"
+              alt="angel tramontin"
+              className={`w-[200px] h-auto rounded-lg ${imageLoaded ? '' : 'hidden'}`}
+              onLoad={() => setImageLoaded(true)}
+              loading="eager"
+            />
+          </div>
+
           <h1 className="text-3xl md:text-5xl font-light text-gray-900 mb-6 tracking-tight">
             hi, i'm angel.
           </h1>
@@ -35,26 +48,25 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </p>
 
             <p>
-              my main quest for the last few months has been{' '}
+              my main quest right now is{' '}
+              <a href="https://diablopadel.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">diablo padel</a>
+              {' '}— i've been playing{' '}
+              <a href="https://youtu.be/rSIvS-Skg28?si=IihzfHS1kzGty_Yx" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">padel</a>
+              {' '}since 2017 — my parents lived in panama and it's everywhere down there. i got hooked and couldn't believe it barely existed in the US. so i'm opening the east bay's first dedicated indoor padel facility. 4 courts, opening 2027.
+            </p>
+
+            <p className="font-medium text-gray-900">side quests:</p>
+
+            <p>
               <a href="https://youtu.be/5Jm6bv3n1So?si=6idWq8JcACp1FpPm" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">goplai</a>
               {' '}— ai that watches your sports games and turns them into highlight reels automatically - starting with basketball. this is a product i would've LOVED to have growing up playing competitive sports my whole life. that's why we built it.{' '}
               <a href="https://form.typeform.com/to/hn44xRGO" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">sign up for our waitlist</a>
               {' '}— we're in beta!
             </p>
 
-            <p className="font-medium text-gray-900">side quests:</p>
-
             <p>
               <a href="https://designmyroute.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">route art buddy</a>
               {' '}— i love cycling around sf and i couldn't figure out how these strava influencers were biking routes that made cool shapes on the map. so i made my own.
-            </p>
-
-            <p>
-              i've been playing{' '}
-              <a href="https://youtu.be/rSIvS-Skg28?si=IihzfHS1kzGty_Yx" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">padel</a>
-              {' '}since 2017 — my parents lived in panama and it's everywhere down there. i got hooked and couldn't believe it barely existed in the US. so i'm working on changing that with{' '}
-              <a href="https://playcostapadel.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors duration-75">costa padel</a>
-              , starting in the east bay.
             </p>
 
             <p>
@@ -101,18 +113,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
 
-        <div className="mt-10">
-          {!imageLoaded && (
-            <div className="skeleton w-[400px] max-w-full h-[300px]" />
-          )}
-          <img
-            src="/429949F7-A2F2-438D-A048-4D398E53595F_1_105_c.jpeg"
-            alt="angel on bike"
-            className={`w-[400px] h-auto rounded-lg ${imageLoaded ? '' : 'hidden'}`}
-            onLoad={() => setImageLoaded(true)}
-            loading="eager"
-          />
-        </div>
       </div>
     </div>
   );
