@@ -32,7 +32,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
           <div className="space-y-4 text-base text-gray-600 max-w-xl leading-relaxed stagger-children">
             <p>
-              i learned pretty young that you can just do things. ever since then, i figured out i can do things that bring people together.
+              i've always had this innate feeling that i should just keep moving, doing new things, and kind of causing chaos. it never was clear to me that this was an advantage until my adult years.
             </p>
 
             <p>
